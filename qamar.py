@@ -7,6 +7,8 @@ from discord.ext import commands
 ALLOWED_USER_ID = 298902527846645760
 ALLOWED_COMMAND_ROLE_ID = 1507828479666950154
 
+Token = os.env("TOKEN")
+
 COUNTRY_ROLE_NAMES = [
     "Kanada",
     "Zjednoczone Królestwo",
@@ -566,4 +568,4 @@ async def on_guild_channel_delete(channel: discord.abc.GuildChannel) -> None:
 load_embassies()
 load_newspapers()
 
-bot.run("MTUyMzExOTg0MTA3MjkwNjI3MA.GkXflf.AncXJcB9ZRwvmVB_LiUV5XFu-BWVksoKnStRLw")
+bot.run(Token)
